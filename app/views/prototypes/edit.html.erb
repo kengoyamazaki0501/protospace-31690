@@ -1,0 +1,16 @@
+<div class="main">
+  <div class="inner">
+    <div class="form__wrapper">
+      <h2 class="page-heading">プロトタイプ編集</h2>
+      <%# 部分テンプレートでフォームを表示する %>
+      <%= render partial: "form", locals: { prototype: @prototype } %>
+    </div>
+  </div>
+</div>
+
+
+<%# renderメソッド名
+【renderのオプション】
+locals 部分テンプレートに変数が使われている場合に使用する。
+partial 部分テンプレートの名前を指定する時
+collection 繰り返し処理 %>
